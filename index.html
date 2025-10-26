@@ -5,7 +5,7 @@
 	<title>Document</title>
 	<meta charset="UTF-8">
 	<meta name="autor" content="Javier Manzano" >
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="styles.css">
   <script></script>
 </head>
 
@@ -114,9 +114,41 @@ typeof 58 + "<br>" +
 typeof 4754545454545446465657576767; + "<br>" +
 typeof 3.14;
 
-let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ66666";
-document.getElementById("prueba").innerHTML = text.length;
 
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("prueba").innerHTML = text.length;
+</script>
+
+<p id="fecha"></p>
+<script>
+const fecha = new Date();
+document.getElementById("fecha").innerHTML = fecha;
+console.log(fecha);
+//alert(fecha);
+</script>
+
+<script>
+// Crear un nuevo párrafo
+const nuevoParrafo = document.createElement('h1');
+nuevoParrafo.textContent = 'Este es un nuevo párrafo.';
+document.body.appendChild(nuevoParrafo);
+</script>
+
+<img id="miImagen">
+<script>
+const imagen = document.getElementById('miImagen');
+imagen.setAttribute('src', '/img/imagen2.jpg');
+imagen.setAttribute('alt', 'esta es una imagen')
+imagen.style.width = 8000;
+</script>
+
+<h1 id="miTit" class="resaltado">HOla mUnDoO</h1>
+<script>
+const titulo = document.getElementById('miTit');
+titulo.style.color = 'blue';
+titulo.style.fontSize = '54px';
+titulo.style.backgroundColor = 'yellow';
+titulo.classList.toggle('resaltado');
 </script>
 
 
