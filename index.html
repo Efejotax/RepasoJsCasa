@@ -13,6 +13,9 @@
   <div id="miDiv"></div>
   <!-- <div id="miCanvas"></div> -->
   <canvas id="miCanvas"></canvas>
+  <div id="myDiv"></div>
+  <div id="myDiv2"></div>
+  <div id="demo"></div>
 
 	<!-- Ejercicio 1  Bucle switch -->
   <script>
@@ -39,7 +42,7 @@ switch (new Date().getDay()) {
   case 6:
     day = "Saturday";
 }
-  </script>
+</script>
 	
 <!-- Ejercicio 2 -->
 <script>
@@ -53,8 +56,8 @@ const pi = 3.14;
 var name;
 name = "Antonio"
 const myConstant = 3.1416;
-var name = "Jose";
-var edad = 30;
+var miName = "Jose";
+var miEdad = 30;
 let surName = "López";
 let year = 2025;
 let x;
@@ -86,6 +89,27 @@ const ctx = canvas.getContext('2d');
   ctx.font = '30px Arial'; // Define la fuente y el tamaño
   ctx.fillText('Hola desde Canvas', 10, 50); // Escribe el texto en las coordenadas (10, 50)
 
+
+// interpolar cadenas en JavaScript
+const edad = 4.5;
+const edadTierra = `Se estima que la Tierra tiene ${edad} mil millones de años.`;
+
+console.log(edadTierra);
+
+document.getElementById("myDiv").textContent = `Se estima que la tierra tiene ${edad} mil millones de años`;
+document.getElementById("myDiv2").textContent = "Se estima que la tierra tiene " + edad + " mil millones de años";
+
+const estudiantes = ["Pedro", "Alfonso", "Ana"];
+
+
+// Operador Typeof
+document.getElementById("demo").innerHTML = 
+typeof "" + "<br>" +
+typeof "John" + "<br>" + 
+typeof "John Doe" + "<br>" +
+typeof 58 + "<br>" +
+typeof 4754545454545446465657576767; + "<br>" +
+typeof 3.14;
 
 
 
