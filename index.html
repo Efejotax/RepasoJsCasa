@@ -6,11 +6,16 @@
 	<meta charset="UTF-8">
 	<meta name="autor" content="Javier Manzano" >
 	<link rel="stylesheet" href="">
+  <script></script>
 </head>
 <body>
   <h1>Hola mundo</h1>
+  <div id="miDiv"></div>
+  <!-- <div id="miCanvas"></div> -->
+  <canvas id="miCanvas"></canvas>
 
-	<script>
+	<!-- Ejercicio 1  Bucle switch -->
+  <script>
 		
 switch (new Date().getDay()) {
   case 0:
@@ -34,7 +39,61 @@ switch (new Date().getDay()) {
   case 6:
     day = "Saturday";
 }
-	</script>
+  </script>
 	
+<!-- Ejercicio 2 -->
+<script>
+// Esto es un comentario de una línea
+/*
+Este es un comentario de 
+varias líneas
+*/
+const pi = 3.14;
+//pi = 3.14;  esto da errot por consola
+var name;
+name = "Antonio"
+const myConstant = 3.1416;
+var name = "Jose";
+var edad = 30;
+let surName = "López";
+let year = 2025;
+let x;
+let y;
+let xx = null;
+var yy = null;
+var llueve = true;
+// Array object
+const cars = ["Saab", "Volvo", "BMW"];
+// Date object
+const date = new Date("2022-03-25");
+// Object
+const person = {firstName:"John", lastName:"Doe"};
+
+//alert(cars);
+//console.log(cars);
+
+// Formas de imprimir texto en pantalla
+
+// innerHTML y textContent
+document.getElementById("miDiv").innerHTML = "¡Hola, mundo!";
+document.getElementById("miDiv").textContent = "Hola Mundo mundial";
+
+
+// Utilizando el elemento canvas
+const canvas = document.getElementById('miCanvas');
+const ctx = canvas.getContext('2d');
+
+  ctx.font = '30px Arial'; // Define la fuente y el tamaño
+  ctx.fillText('Hola desde Canvas', 10, 50); // Escribe el texto en las coordenadas (10, 50)
+
+
+
+
+</script>
+
+
+
+
+
 </body>
 </html>
