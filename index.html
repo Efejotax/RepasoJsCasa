@@ -151,7 +151,84 @@ titulo.style.backgroundColor = 'yellow';
 titulo.classList.toggle('resaltado');
 </script>
 
+<script>
+// scientific (exponent) notation:
+let xy = 12e5;
+let yx = 12e-5;
+console.log(xy,yx);
+</script>
 
+<script>
+// elevar un numero aun exponente con **
+  var numeroe = 1200;
+  var ressult = 0;
+console.log (ressult = numeroe ** 2);
+
+</script>
+
+<script>
+// función básica para crear raiz cuadrada
+function raizCuadrada(numer) {
+  if (numer < 0) {
+    return "No se puede calcular la raíz cuadrada de un número negativo.";
+  }
+  return numer ** 0.5;
+}
+
+console.log(raizCuadrada(16)); // Devuelve 4
+console.log(raizCuadrada(2));  // Devuelve 1.4142135623730951
+</script>
+
+<script>
+// Usando Math.pow()
+function raizCuadradaConPow(numerox) {
+  if (numerox < 0) {
+    return "No se puede calcular la raíz cuadrada de un número negativo.";
+  }
+  return Math.pow(numerox, 0.5);
+}
+
+console.log(raizCuadradaConPow(25)); // Devuelve 5
+</script>
+
+<script>
+  function saludo(name, age) {
+    return `Hola ${name} tu edad es ${edad}.`;
+  }
+
+  console.log(saludo);
+</script>
+
+<script>
+  // Objeto con sintaxis 1
+  const persona1 = {nombre:"Javier", apellido:"Manzano", edad:"50"};
+
+  console.log(persona1);
+</script>
+
+<script>
+  // Objeto con sintaxis 2
+  const persona2 = {};
+  // agregar las propiedades
+  persona2.nombre = "Juan";
+  persona2.apellido = "García";
+  persona2.edad = 30;
+
+  console.log(persona2);
+</script>
+
+<p id="persona"></p>
+
+<script>
+// Create a new JavaScript object using new Object():
+  const persona3 = new Object({
+    nombre: "Alex",
+    apellido: "Pérez",
+    edad: 40
+  });
+  document.getElementById("persona").innerHTML =
+  persona3.nombre + " " +  persona3.apellido + " tiene la edad de " + persona3.edad + " años."; 
+</script>
 
 
 
